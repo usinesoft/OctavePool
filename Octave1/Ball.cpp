@@ -18,6 +18,22 @@ void Ball::advance()
 {
 	_x=_x+_vx;
 	_y=_y+_vy;
+
+	double lenght = sqrt(_vx * _vx + _vy * _vy);
+	double sinalpha = _vy / lenght;
+	double cosalpha = _vx / lenght;
+
+	lenght*=.998881;
+	_vx = lenght * cosalpha;
+	_vy = lenght * sinalpha;
+
+	if (abs( _vx) < 0.003 ) {
+		_vx = 0;
+	}
+	if (abs(_vy) < 0.003) {
+		_vy = 0;
+	}
+
 }
 
 bool Ball::isCollisionY (float yWall)

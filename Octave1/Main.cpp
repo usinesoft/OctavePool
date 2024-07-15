@@ -55,11 +55,18 @@ using namespace std;
 int main()
 {
 	sf::RenderWindow window(sf::VideoMode(600, 400), "SFML works!");
+	sf::Clock clockDisplay;
+	sf::Clock clockCompute;
 
 	Game theGame;
 
+	clockDisplay.restart();
+	clockCompute.restart();
+
 	while (window.isOpen())
 	{
+		
+
 		sf::Event event;
 		while (window.pollEvent(event))
 		{
@@ -87,23 +94,32 @@ int main()
 		}
 
 
-		theGame.advance();
+		if (clockCompute.getElapsedTime().asMilliseconds() > 1) {
+			theGame.advance();
+			clockCompute.restart();
+		}
+
 		
-		window.clear();
+		
+		if (clockDisplay.getElapsedTime().asMilliseconds() > 10) {
+			window.clear();
 
-		auto shapes = theGame.GetShapes();
+			auto shapes = theGame.GetShapes();
 
-		for (auto shape : shapes)
-		{
-			window.draw(*shape);
+			for (auto shape : shapes)
+			{
+				window.draw(*shape);
+			}
+
+
+			window.display();
+
+			clockDisplay.restart();
 		}
 		
 
-		window.display();
-		
-
-		std::chrono::milliseconds dura(1);
-		this_thread::sleep_for(dura);
+		/*std::chrono::microseconds dura(1000);
+		this_thread::sleep_for(dura);*/
 	}//main loop
 
 	return 0;

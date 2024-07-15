@@ -26,6 +26,8 @@ private:
 	sf::Sound _ballHitSound;
 	sf::SoundBuffer _ballFallBuffer;
 	sf::Sound _ballFall;
+	
+
 
 public:
 

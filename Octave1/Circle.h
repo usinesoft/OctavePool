@@ -3,8 +3,8 @@ class Circle
 {
 protected:
 
-	float _x=0;
-	float _y=0;
+	double _x=0;
+	double _y=0;
 	float _radius=1;
 
 public:

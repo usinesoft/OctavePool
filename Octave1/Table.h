@@ -13,6 +13,8 @@ enum Collision
 
 class Table:public Rectangle
 {
+	sf::Texture _tableImage;
+
 public:
 	Collision checkCollision(Ball ball) const;
 	Table(float x, float y, float width, float height);

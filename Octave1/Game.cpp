@@ -15,6 +15,9 @@ Game::Game(): _ball(65, 75), _table(50, 50, 500, 300), _hole(150, 170), _status(
 		std::cout << "Can not load sound" << std::endl;
 
 	_ballFall.setBuffer(_ballFallBuffer);
+
+	
+
 }
 
 void Game::advance()
@@ -46,7 +49,7 @@ void Game::advance()
 
 	if (collission != None)
 	{
-		std::cout << std::endl << "BOUNCE" << std::endl;
+		//std::cout << std::endl << "BOUNCE" << std::endl;
 
 		_ballHitSound.play();
 	}
@@ -55,7 +58,7 @@ void Game::advance()
 	{
 		_status = Finished;
 
-		std::cout << std::endl << "Ball in hole!" << std::endl;
+		//std::cout << std::endl << "Ball in hole!" << std::endl;
 
 		_ballFall.play();
 	}
@@ -100,6 +103,8 @@ void Game::start()
 		_status = Running;
 
 		_ballHitSound.play();
+
+
 	}
 	else
 	{

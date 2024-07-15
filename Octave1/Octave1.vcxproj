@@ -135,7 +135,7 @@
     <ClCompile Include="Cue.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Hole.cpp" />
-    <ClCompile Include="Octave1.cpp" />
+    <ClCompile Include="Main.cpp" />
     <ClCompile Include="Rectangle.cpp" />
     <ClCompile Include="Table.cpp" />
   </ItemGroup>

@@ -22,6 +22,8 @@ Collision Table::checkCollision(Ball ball) const
 
 Table::Table(float x, float y, float width, float height):Rectangle(x, y, width, height)
 {
+	_tableImage.loadFromFile("table.png");
+	
 }
 
 std::shared_ptr<sf::Shape> Table::getShape() const
@@ -32,6 +34,7 @@ std::shared_ptr<sf::Shape> Table::getShape() const
 	pRectangle-> setSize(sf::Vector2f(_width, _height));
 	pRectangle-> setPosition(_x, _y);
 	pRectangle-> setFillColor(sf::Color(10, 200, 10));
+	pRectangle->setTexture(&_tableImage);
 
 	return std::shared_ptr<sf::Shape>(pRectangle);
 

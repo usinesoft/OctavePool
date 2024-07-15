@@ -8,9 +8,9 @@ void Cue::computeVxVy()
 {
 	const float alphaRad = (3.14159265 / 180) * _alpha;
 
-	_vy = _lenght * sin(alphaRad) / 5.;
+	_vy = _lenght * sin(alphaRad) / 30;
 
-	_vx = _lenght * cos(alphaRad) / 5.;
+	_vx = _lenght * cos(alphaRad) / 30;
 
 	
 

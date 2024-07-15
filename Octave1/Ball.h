@@ -6,8 +6,8 @@
 class Ball:public Circle
 {
 	
-	float _vx = 0;
-	float _vy = 0;
+	double _vx = 0;
+	double _vy = 0;
 
 public:
 

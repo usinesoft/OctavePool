@@ -1,12 +1,6 @@
 ﻿  Ball.cpp
-  Circle.cpp
-  Cue.cpp
-  Game.cpp
-C:\spike\Octave1\Octave1\Cue.cpp(9,44): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\spike\Octave1\Octave1\Cue.cpp(9,23): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
-  Hole.cpp
-  Octave1.cpp
-  Rectangle.cpp
-  Table.cpp
-  Generating Code...
-  Octave1.vcxproj -> C:\spike\Octave1\x64\Debug\Octave1.exe
+C:\git\OctavePool\Octave1\Ball.cpp(41,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\git\OctavePool\Octave1\Ball.cpp(58,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\git\OctavePool\Octave1\Ball.cpp(74,25): warning C4244: 'argument': conversion from 'const double' to 'float', possible loss of data
+C:\git\OctavePool\Octave1\Ball.cpp(74,21): warning C4244: 'argument': conversion from 'const double' to 'float', possible loss of data
+  Octave1.vcxproj -> C:\git\OctavePool\x64\Debug\Octave1.exe
