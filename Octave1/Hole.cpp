@@ -13,6 +13,7 @@ shared_ptr<sf::Shape> Hole::getShape() const
 	const auto shape = new sf::CircleShape(_radius);
 	shape->setPosition(_x, _y);
 	shape->setFillColor(sf::Color(10, 10, 10));
+	
 
 	return shared_ptr<sf::Shape>(shape);
 }

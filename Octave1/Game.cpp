@@ -4,7 +4,7 @@
 
 using namespace std;
 
-Game::Game(): _ball(65, 75), _table(50, 50, 500, 300), _hole(150, 170), _status(NotStarted), _cue(65, 75)
+Game::Game(): _ball(65, 75), _table(50, 50, 500, 300), _hole(150, 170), _status(Before), _cue(65, 75), _panel()
 {
 	if (!_ballHitBuffer.loadFromFile("ball01.wav"))
 		std::cout << "Can not load sound" << std::endl;
@@ -72,8 +72,9 @@ vector<shared_ptr<sf::Shape>> Game::GetShapes() const
 
 	result.push_back(_hole.getShape());
 
-	
-
+	if (_status == Before) {
+		result.push_back(_panel.getShape());
+	}
 
 	if(_status != Finished)
 	{

@@ -6,7 +6,7 @@ using namespace std;
 
 Ball::Ball(float x, float y): Circle(x, y, 10 )
 {
-
+	_ballImage.loadFromFile("whiteball.png");
 }
 
 void Ball::shoot(float vx, float vy)
@@ -72,6 +72,8 @@ shared_ptr<sf::Shape> Ball::getShape() const
 {
 	const auto shape = new sf::CircleShape(_radius);
 	shape->setPosition(_x, _y);
+	shape->setTexture(&_ballImage);
+	shape->setPointCount(1000);
 
 	return shared_ptr<sf::Shape>(shape);
 }

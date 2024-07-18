@@ -5,7 +5,8 @@
 
 class Ball:public Circle
 {
-	
+	sf::Texture _ballImage;
+
 	double _vx = 0;
 	double _vy = 0;
 

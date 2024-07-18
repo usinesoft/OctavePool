@@ -1,6 +1,2 @@
-﻿  Ball.cpp
-C:\git\OctavePool\Octave1\Ball.cpp(41,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\git\OctavePool\Octave1\Ball.cpp(58,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\git\OctavePool\Octave1\Ball.cpp(74,25): warning C4244: 'argument': conversion from 'const double' to 'float', possible loss of data
-C:\git\OctavePool\Octave1\Ball.cpp(74,21): warning C4244: 'argument': conversion from 'const double' to 'float', possible loss of data
+﻿  Panel.cpp
   Octave1.vcxproj -> C:\git\OctavePool\x64\Debug\Octave1.exe

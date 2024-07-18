@@ -136,6 +136,7 @@
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Hole.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Panel.cpp" />
     <ClCompile Include="Rectangle.cpp" />
     <ClCompile Include="Table.cpp" />
   </ItemGroup>
@@ -146,6 +147,7 @@
     <ClInclude Include="Game.h" />
     <ClInclude Include="Hole.h" />
     <ClInclude Include="Lesson1.h" />
+    <ClInclude Include="Panel.h" />
     <ClInclude Include="Rectangle.h" />
     <ClInclude Include="Table.h" />
   </ItemGroup>

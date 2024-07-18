@@ -6,10 +6,11 @@
 
 #include "Cue.h"
 #include "Hole.h"
+#include "Panel.h"
 
 enum GameStatus
 {
-	NotStarted, Running, Finished
+	Before, NotStarted, Running, Finished
 };
 
 class Game
@@ -19,6 +20,7 @@ private:
 	Ball _ball;
 	Table _table;
 	Hole _hole;
+	Panel _panel;
 	GameStatus _status;
 	Cue _cue;
 
